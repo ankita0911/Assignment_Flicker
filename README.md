@@ -9,3 +9,6 @@ Clone the repo and run UberAssignment.xcodeproj
 Run the project and search for any keyword like "kittens".
 The application doesn't uses any third party library.
 By default, the application displays the search result of "kittens".
+
+![SearchPhoto](/screenshot.png?raw=true "Search Photo")
+
