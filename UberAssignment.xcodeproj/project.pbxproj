@@ -1,0 +1,620 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BC03BC32234382610079825B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BC03BC31234382610079825B /* AppDelegate.m */; };
+		BC03BC35234382610079825B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC03BC34234382610079825B /* ViewController.m */; };
+		BC03BC38234382610079825B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC03BC36234382610079825B /* Main.storyboard */; };
+		BC03BC3A234382630079825B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC03BC39234382630079825B /* Assets.xcassets */; };
+		BC03BC3D234382630079825B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC03BC3B234382630079825B /* LaunchScreen.storyboard */; };
+		BC03BC40234382630079825B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BC03BC3F234382630079825B /* main.m */; };
+		BC03BC4A234382630079825B /* UberAssignmentTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BC03BC49234382630079825B /* UberAssignmentTests.m */; };
+		BC03BC55234382630079825B /* UberAssignmentUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = BC03BC54234382630079825B /* UberAssignmentUITests.m */; };
+		BC03BC64234516300079825B /* Connection Manager.m in Sources */ = {isa = PBXBuildFile; fileRef = BC03BC63234516300079825B /* Connection Manager.m */; };
+		BC03BC6A23451B4F0079825B /* ImageModel.m in Sources */ = {isa = PBXBuildFile; fileRef = BC03BC6923451B4F0079825B /* ImageModel.m */; };
+		BC03BC6D234534190079825B /* PhotoCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BC03BC6C234534190079825B /* PhotoCollectionCell.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BC03BC46234382630079825B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BC03BC25234382610079825B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BC03BC2C234382610079825B;
+			remoteInfo = UberAssignment;
+		};
+		BC03BC51234382630079825B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BC03BC25234382610079825B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BC03BC2C234382610079825B;
+			remoteInfo = UberAssignment;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		BC03BC2D234382610079825B /* UberAssignment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UberAssignment.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC03BC30234382610079825B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		BC03BC31234382610079825B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		BC03BC33234382610079825B /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		BC03BC34234382610079825B /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		BC03BC37234382610079825B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BC03BC39234382630079825B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BC03BC3C234382630079825B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BC03BC3E234382630079825B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BC03BC3F234382630079825B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		BC03BC45234382630079825B /* UberAssignmentTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UberAssignmentTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC03BC49234382630079825B /* UberAssignmentTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UberAssignmentTests.m; sourceTree = "<group>"; };
+		BC03BC4B234382630079825B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BC03BC50234382630079825B /* UberAssignmentUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UberAssignmentUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC03BC54234382630079825B /* UberAssignmentUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UberAssignmentUITests.m; sourceTree = "<group>"; };
+		BC03BC56234382630079825B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BC03BC62234516300079825B /* Connection Manager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Connection Manager.h"; sourceTree = "<group>"; };
+		BC03BC63234516300079825B /* Connection Manager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Connection Manager.m"; sourceTree = "<group>"; };
+		BC03BC6823451B4F0079825B /* ImageModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ImageModel.h; sourceTree = "<group>"; };
+		BC03BC6923451B4F0079825B /* ImageModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ImageModel.m; sourceTree = "<group>"; };
+		BC03BC6B234534190079825B /* PhotoCollectionCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PhotoCollectionCell.h; sourceTree = "<group>"; };
+		BC03BC6C234534190079825B /* PhotoCollectionCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PhotoCollectionCell.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BC03BC2A234382610079825B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC03BC42234382630079825B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC03BC4D234382630079825B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BC03BC24234382610079825B = {
+			isa = PBXGroup;
+			children = (
+				BC03BC2F234382610079825B /* UberAssignment */,
+				BC03BC48234382630079825B /* UberAssignmentTests */,
+				BC03BC53234382630079825B /* UberAssignmentUITests */,
+				BC03BC2E234382610079825B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BC03BC2E234382610079825B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BC03BC2D234382610079825B /* UberAssignment.app */,
+				BC03BC45234382630079825B /* UberAssignmentTests.xctest */,
+				BC03BC50234382630079825B /* UberAssignmentUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BC03BC2F234382610079825B /* UberAssignment */ = {
+			isa = PBXGroup;
+			children = (
+				BC03BC30234382610079825B /* AppDelegate.h */,
+				BC03BC31234382610079825B /* AppDelegate.m */,
+				BC03BC33234382610079825B /* ViewController.h */,
+				BC03BC34234382610079825B /* ViewController.m */,
+				BC03BC6F234539370079825B /* Connection  */,
+				BC03BC71234539500079825B /* Model */,
+				BC03BC6E2345391E0079825B /* Photo Cell */,
+				BC03BC36234382610079825B /* Main.storyboard */,
+				BC03BC39234382630079825B /* Assets.xcassets */,
+				BC03BC3B234382630079825B /* LaunchScreen.storyboard */,
+				BC03BC3E234382630079825B /* Info.plist */,
+				BC03BC3F234382630079825B /* main.m */,
+			);
+			path = UberAssignment;
+			sourceTree = "<group>";
+		};
+		BC03BC48234382630079825B /* UberAssignmentTests */ = {
+			isa = PBXGroup;
+			children = (
+				BC03BC49234382630079825B /* UberAssignmentTests.m */,
+				BC03BC4B234382630079825B /* Info.plist */,
+			);
+			path = UberAssignmentTests;
+			sourceTree = "<group>";
+		};
+		BC03BC53234382630079825B /* UberAssignmentUITests */ = {
+			isa = PBXGroup;
+			children = (
+				BC03BC54234382630079825B /* UberAssignmentUITests.m */,
+				BC03BC56234382630079825B /* Info.plist */,
+			);
+			path = UberAssignmentUITests;
+			sourceTree = "<group>";
+		};
+		BC03BC6E2345391E0079825B /* Photo Cell */ = {
+			isa = PBXGroup;
+			children = (
+				BC03BC6B234534190079825B /* PhotoCollectionCell.h */,
+				BC03BC6C234534190079825B /* PhotoCollectionCell.m */,
+			);
+			path = "Photo Cell";
+			sourceTree = "<group>";
+		};
+		BC03BC6F234539370079825B /* Connection  */ = {
+			isa = PBXGroup;
+			children = (
+				BC03BC62234516300079825B /* Connection Manager.h */,
+				BC03BC63234516300079825B /* Connection Manager.m */,
+			);
+			path = "Connection ";
+			sourceTree = "<group>";
+		};
+		BC03BC71234539500079825B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BC03BC6823451B4F0079825B /* ImageModel.h */,
+				BC03BC6923451B4F0079825B /* ImageModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BC03BC2C234382610079825B /* UberAssignment */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BC03BC59234382630079825B /* Build configuration list for PBXNativeTarget "UberAssignment" */;
+			buildPhases = (
+				BC03BC29234382610079825B /* Sources */,
+				BC03BC2A234382610079825B /* Frameworks */,
+				BC03BC2B234382610079825B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = UberAssignment;
+			productName = UberAssignment;
+			productReference = BC03BC2D234382610079825B /* UberAssignment.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BC03BC44234382630079825B /* UberAssignmentTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BC03BC5C234382630079825B /* Build configuration list for PBXNativeTarget "UberAssignmentTests" */;
+			buildPhases = (
+				BC03BC41234382630079825B /* Sources */,
+				BC03BC42234382630079825B /* Frameworks */,
+				BC03BC43234382630079825B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BC03BC47234382630079825B /* PBXTargetDependency */,
+			);
+			name = UberAssignmentTests;
+			productName = UberAssignmentTests;
+			productReference = BC03BC45234382630079825B /* UberAssignmentTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		BC03BC4F234382630079825B /* UberAssignmentUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BC03BC5F234382630079825B /* Build configuration list for PBXNativeTarget "UberAssignmentUITests" */;
+			buildPhases = (
+				BC03BC4C234382630079825B /* Sources */,
+				BC03BC4D234382630079825B /* Frameworks */,
+				BC03BC4E234382630079825B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BC03BC52234382630079825B /* PBXTargetDependency */,
+			);
+			name = UberAssignmentUITests;
+			productName = UberAssignmentUITests;
+			productReference = BC03BC50234382630079825B /* UberAssignmentUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BC03BC25234382610079825B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1030;
+				ORGANIZATIONNAME = "Ankita Mishra";
+				TargetAttributes = {
+					BC03BC2C234382610079825B = {
+						CreatedOnToolsVersion = 10.3;
+					};
+					BC03BC44234382630079825B = {
+						CreatedOnToolsVersion = 10.3;
+						TestTargetID = BC03BC2C234382610079825B;
+					};
+					BC03BC4F234382630079825B = {
+						CreatedOnToolsVersion = 10.3;
+						TestTargetID = BC03BC2C234382610079825B;
+					};
+				};
+			};
+			buildConfigurationList = BC03BC28234382610079825B /* Build configuration list for PBXProject "UberAssignment" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BC03BC24234382610079825B;
+			productRefGroup = BC03BC2E234382610079825B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BC03BC2C234382610079825B /* UberAssignment */,
+				BC03BC44234382630079825B /* UberAssignmentTests */,
+				BC03BC4F234382630079825B /* UberAssignmentUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BC03BC2B234382610079825B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC03BC3D234382630079825B /* LaunchScreen.storyboard in Resources */,
+				BC03BC3A234382630079825B /* Assets.xcassets in Resources */,
+				BC03BC38234382610079825B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC03BC43234382630079825B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC03BC4E234382630079825B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BC03BC29234382610079825B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC03BC35234382610079825B /* ViewController.m in Sources */,
+				BC03BC40234382630079825B /* main.m in Sources */,
+				BC03BC6A23451B4F0079825B /* ImageModel.m in Sources */,
+				BC03BC64234516300079825B /* Connection Manager.m in Sources */,
+				BC03BC32234382610079825B /* AppDelegate.m in Sources */,
+				BC03BC6D234534190079825B /* PhotoCollectionCell.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC03BC41234382630079825B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC03BC4A234382630079825B /* UberAssignmentTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC03BC4C234382630079825B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC03BC55234382630079825B /* UberAssignmentUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BC03BC47234382630079825B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BC03BC2C234382610079825B /* UberAssignment */;
+			targetProxy = BC03BC46234382630079825B /* PBXContainerItemProxy */;
+		};
+		BC03BC52234382630079825B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BC03BC2C234382610079825B /* UberAssignment */;
+			targetProxy = BC03BC51234382630079825B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BC03BC36234382610079825B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BC03BC37234382610079825B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BC03BC3B234382630079825B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BC03BC3C234382630079825B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BC03BC57234382630079825B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		BC03BC58234382630079825B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BC03BC5A234382630079825B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = UberAssignment/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.10times.UberAssignment;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		BC03BC5B234382630079825B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = UberAssignment/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.10times.UberAssignment;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		BC03BC5D234382630079825B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = UberAssignmentTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.10times.UberAssignmentTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/UberAssignment.app/UberAssignment";
+			};
+			name = Debug;
+		};
+		BC03BC5E234382630079825B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = UberAssignmentTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.10times.UberAssignmentTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/UberAssignment.app/UberAssignment";
+			};
+			name = Release;
+		};
+		BC03BC60234382630079825B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = UberAssignmentUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.10times.UberAssignmentUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = UberAssignment;
+			};
+			name = Debug;
+		};
+		BC03BC61234382630079825B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = UberAssignmentUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.10times.UberAssignmentUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = UberAssignment;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BC03BC28234382610079825B /* Build configuration list for PBXProject "UberAssignment" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BC03BC57234382630079825B /* Debug */,
+				BC03BC58234382630079825B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BC03BC59234382630079825B /* Build configuration list for PBXNativeTarget "UberAssignment" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BC03BC5A234382630079825B /* Debug */,
+				BC03BC5B234382630079825B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BC03BC5C234382630079825B /* Build configuration list for PBXNativeTarget "UberAssignmentTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BC03BC5D234382630079825B /* Debug */,
+				BC03BC5E234382630079825B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BC03BC5F234382630079825B /* Build configuration list for PBXNativeTarget "UberAssignmentUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BC03BC60234382630079825B /* Debug */,
+				BC03BC61234382630079825B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BC03BC25234382610079825B /* Project object */;
+}
