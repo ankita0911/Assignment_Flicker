@@ -15,7 +15,7 @@
 static NSString * const photoCellIdentifier = @"cell";
 
 @implementation ViewController{
-    NSString *searchStr, *searchFlag;  //searchFlag (whether search button was pressed or not)
+    NSString *searchStr;  //string used for searching
     NSInteger page;
     NSMutableArray *photosArray;
 }
@@ -25,14 +25,10 @@ static NSString * const photoCellIdentifier = @"cell";
     // Do any additional setup after loading the view.
     
     searchStr = @"kittens";
-    searchFlag = @"false";
     page = 1;
     _searchbar.text = searchStr;
     photosArray = [[NSMutableArray alloc] init];
     [self callServerRequest:[NSString stringWithFormat:@"%ld",(long)page] andSearch:searchStr];
-    
-    NSLog(@"count1:: %lu",(unsigned long)self->photosArray.count);
-
 }
 
 
@@ -57,18 +53,11 @@ static NSString * const photoCellIdentifier = @"cell";
 
 #pragma mark - UISearchControllerDelegate & UISearchResultsDelegate
 
--(void)searchBar:(UISearchBar *)searchBar textDidChange:(NSString *)searchText{
-    NSLog(@"searchBar");
-}
-
 -(void)searchBarTextDidBeginEditing:(UISearchBar *)searchBar{
-    NSLog(@"searchBarTextDidBeginEditing");
     self.searchbar.showsCancelButton = YES;
 }
 
 -(void)searchBarSearchButtonClicked:(UISearchBar *)searchBar{
-    NSLog(@"searchBarSearchButtonClicked");
-    searchFlag = @"true";
     self.searchbar.showsCancelButton = YES;
     searchStr = [NSString stringWithFormat:@"%@",_searchbar.text];   // get text for searching
     [searchBar resignFirstResponder];
@@ -80,19 +69,9 @@ static NSString * const photoCellIdentifier = @"cell";
 }
 
 -(void)searchBarCancelButtonClicked:(UISearchBar *)searchBar{
-    NSLog(@"searchBarCancelButtonClicked");
     _searchbar.text = searchStr;
     [_searchbar setShowsCancelButton:NO animated:YES];
     [_searchbar resignFirstResponder];
-//    if ([searchFlag isEqual:@"true"]) {
-//        searchStr = @"kittens";   //initial values
-//        _searchbar.text = searchStr;
-//        page = 1;
-//        [photosArray removeAllObjects];
-//        [_collectionview reloadData];
-//        [self callServerRequest:[NSString stringWithFormat:@"%ld",(long)page] andSearch:searchStr];
-//        searchFlag = @"false";
-//    }
 }
 
 
